@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="theme-color" content="#000">
+
+    <title>Подсчёт числа слов в тексте онлайн</title>
+    <style>
+        body {
+        font-family: Verdana;
+        }
+        .main {
+        margin: 20px 0;
+        position: relative;
+        }
+
+        .wrapper {
+        width: 400px;
+        position: relative;
+        margin: 0 auto;
+        }
+        .send_form_submit {
+        margin: 20px 0 20px;
+        padding: 5px 25px;
+        float: right;
+        }
+    </style>
+</head>
+<body>
+<div class=" 'main'">
+    <div class = 'wrapper'>
+        <h1>Вставьте сюда текст</h1>
+    <form name = 'send' class = "send_form" action="/cgi-bin/counter.py">
+        <textarea name = 'send_textarea' class = "send_form_textarea" rows="10" cols="55" placeholder="Текст">
+
+        </textarea>
+        <br>
+        <input type="submit" class = 'send_form_submit' value = 'Считать'>
+    </form>
+    <div class = 'tags'>
+
+    </div>
+    <div class = 'words'>
+
+    </div>
+    </div>
+</div>
+</body>
+</html>
